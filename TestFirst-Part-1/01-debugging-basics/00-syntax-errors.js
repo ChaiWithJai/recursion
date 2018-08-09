@@ -1,9 +1,9 @@
-const hello = 'hello';
+const hi = 'hi';
 const bye = 'bye';
 const world = 'world';
 
 function helloWorld(){
-  return `${hello} ${world}`
+  return `${hi} ${world}`
 }
 
 const goodbyeWorld = {
