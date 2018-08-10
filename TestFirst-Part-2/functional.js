@@ -39,14 +39,6 @@ const includes = (collection, searchVal) => {
 const countWords = (currentVal, sentence) =>
   currentVal + sentence.split(' ').length;
 
-// const reduce = (array, startVal, combinerFunc) => {
-//   let currentVal = startVal;
-//   for (let i = 0; i < array.length; i++) {
-//     currentVal = combinerFunc(currentVal, array[i]);
-//   }
-//   return currentVal;
-// };
-
 const reduce = (array, startVal, combinerFunc) => {
   let value = startVal;
   array.forEach(index => {
@@ -57,7 +49,6 @@ const reduce = (array, startVal, combinerFunc) => {
 
 const sum = array => {
   const adder = (currentSum, nextVal) => currentSum + nextVal;
-  debugger;
   return reduce(array, 0, adder);
 };
 
