@@ -1,10 +1,10 @@
-const doubler = n => n * 2;
-
 const forEach = (array, iteratorFunc) => {
   for (let i = 0; i < array.length; i++) {
-    iteratorFunc(i);
+    iteratorFunc(array[i]);
   }
 };
+
+const doubler = n => n * 2;
 
 const map = (array, iteratorFunc) => {
   let returnArray = [];
