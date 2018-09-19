@@ -11,4 +11,4 @@ const dog = {
   },
 };
 
-const { bark, loudBark } = dog;
+const { bark } = dog;
