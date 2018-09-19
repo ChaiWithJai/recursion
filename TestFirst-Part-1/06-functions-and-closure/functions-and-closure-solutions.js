@@ -34,13 +34,14 @@ const makeAdder = numberToRemember => {
   };
 };
 
-const once = fnToRunOnce => {
-  let hasRan = false;
+const once = func => {
+  let notCalled = true;
   return () => {
-    if (hasRan === false) {
-      fnToRunOnce();
-      hasRan = true;
+    if (notCalled) {
+      notCalled = false;
+      return func();
     }
+    return 'the nested function has already been called...';
   };
 };
 
