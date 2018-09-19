@@ -34,16 +34,16 @@ const makeAdder = numberToRemember => {
   };
 };
 
-const once = func => {
-  let notCalled = true;
+const once = (func) => {
+  let notCalled = true;  
   return () => {
-    if (notCalled) {
+    if(notCalled) {
       notCalled = false;
       return func();
     }
-    return 'the nested function has already been called...';
-  };
-};
+    return 'the function has already been called...'    
+  }
+}
 
 var createObjectWithClosures = function() {
   let total = 0;
