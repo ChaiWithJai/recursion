@@ -45,7 +45,7 @@ const once = (func) => {
   }
 }
 
-var createObjectWithClosures = function() {
+const createObjectWithClosures = function() {
   let total = 0;
   return {
     oneIncrementer: function() {
