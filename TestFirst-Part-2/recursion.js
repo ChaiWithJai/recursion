@@ -6,14 +6,28 @@ const factorialIterative = n => {
   return total;
 };
 
-const factorial = n => {
+function factorial(n){
   if (n === 0) {
     return 1;
   }
   return n * factorial(n - 1);
 };
 
-const fib = n => {
+function sumTheDigits(arr) {
+  if (arr.length == 0) {
+    return 0;
+  } else {
+    return arr[0] + sumTheDigits(arr.slice(1)); 
+  }
+}
+
+function countTheVowels(str) {
+  if(!str.length) return 0;
+  //                   oh the power of type coercion :)
+  return 'aeiouAEIOU'.includes(str[0]) + countTheVowels(str.slice(1));
+}
+
+function fib(n) {
   if (n === 0 || n === 1) {
     return 1;
   }
@@ -24,7 +38,7 @@ const type = val => {
   return Object.prototype.toString.call(val).slice(8, -1);
 };
 
-const stringify = obj => {
+function stringify(obj){
   if (type(obj) === 'String') {
     return `"${obj}"`;
   }
