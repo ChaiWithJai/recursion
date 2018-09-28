@@ -16,14 +16,8 @@ const indexAndValue = arr => {
   });
 };
 
-Array.prototype.doNotInclude = function(arr) {
-  if (!Array.isArray(arr)) arr = [arr];
-  return this.filter((val, i) => {
-    if (!arr.includes(i)) return val;
-  });
-};
 
-function getPopulation(arr, countries) {
+const getPopulation = (arr, countries) => {
   return arr.reduce((accum, country) => {
     if (countries.includes(country.name) || countries.length === 0) {
       return accum + country.population;
@@ -59,7 +53,7 @@ const separateAndReturnNames = (arr, property, lengthOfName) => {
     .map(superhero => superhero[property]);
 };
 
-function priorityTodoDuration(todoList) {
+const priorityTodoDuration = (todoList) => {
   return todoList
     .filter(todo => todo.priority === 'high')
     .reduce((accum, todo) => {
@@ -73,4 +67,19 @@ const inYourBudget = (val, arr) => {
 
 const extensionSearch = (ext, arr) => {
   return arr.filter(file => file.includes(ext));
+};
+
+const mapReduce = (arr, iteratorFunc) => {
+  return arr.reduce((accum, val) => {
+    accum.push(iteratorFunc(val));
+    return accum;
+    // return [...accum, iteratorFunc(val)]
+  }, []);
+};
+
+const filterReduce = (arr, iteratorFunc) => {
+  return arr.reduce((accum, val) => {
+    if (iteratorFunc(val)) accum.push(val);
+    return accum;
+  }, []);
 };
