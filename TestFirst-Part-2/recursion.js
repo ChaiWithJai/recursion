@@ -28,13 +28,10 @@ function countTheVowels(str) {
 }
 
 function recSmallestInt(arr) {
-  // write code here
-  if(arr.length === 1) {
-    return arr.shift();
-  } else {
-    return Math.min(arr.shift(), recSmallestInt(arr.slice(1)))
-  }
+  if (arr.length === 1) return arr[0];
+  return Math.min(arr[0], recSmallestInt(arr.slice(1)));
 }
+
 
 function fib(n) {
   if (n === 0 || n === 1) {
