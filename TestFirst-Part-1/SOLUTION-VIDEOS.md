@@ -31,7 +31,7 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmltLh
   - [Your Function Runner](https://youtu.be/KDmbN7Jqk0o)
   - [Make Adder](https://youtu.be/A-D9j3OP_to)
   - [Once](https://youtu.be/iC5xRBoF2Sw)
-  - [Create Object With Closures](https://youtu.be/iC5xRBoF2Sw)
+  - [Create Object With Closures](https://youtu.be/iVYadNJ8jA8)
   
 **Note: There won't be a solution video for every problem, if you would like an in depth review of the a problem post a question on the Forum or attend the Help Desk when it is open**
 
