@@ -1,23 +1,24 @@
 const renameFiles = arrayOfFilenames => {
   const nameTracker = {};
-  const namer = (fileName, num) => `${fileName}(${num})`;
-
-  return arrayOfFilenames.map(name => {
-    // extension name
-    let extension = nameTracker[name] || 0;
-    // how many times filename is used
-    nameTracker[name] = extension + 1;
-    // 0 return true, if not proceed...
-    if (extension === 0) {
+  return arrayOfFilenames.map(name => {    
+    if (nameTracker[name] === undefined) {
+      nameTracker[name] = 0;
       return name;
     }
-    // while the key exists
-    let keyName = namer(name, extension);
-    while (nameTracker[keyName] || arrayOfFilenames.indexOf(keyName) > -1) {
-      keyName = namer(name, extension++);
+    let extension = nameTracker[name] + 1;
+    nameTracker[name] = extension;
+    let extensionName = `${name}(${extension})`;
+
+    while (
+      nameTracker[extensionName] >= 0 ||
+      arrayOfFilenames.includes(extensionName)
+    ) {
+      extension += 1;
+      extensionName = `${name}(${extension})`;
     }
-    nameTracker[keyName] = 1;
-    return keyName;
+
+    nameTracker[extensionName] = 0;
+    return extensionName;
   });
 };
 
