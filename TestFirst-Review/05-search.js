@@ -1,5 +1,5 @@
 function search(func) {
-  var bool = false;
+  let bool = false;
   this.forEach((val) => {
     if (func(val)) {
       bool = true;
