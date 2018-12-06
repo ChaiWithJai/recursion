@@ -13,7 +13,9 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmkGaS
   - [Sometimes Part 3](https://youtu.be/9qpn8U6HgEI)
 - [05 - Search](https://youtu.be/xUu06kVGTpE)
 - 06 - My Event Emitter
-  - [MyEventEmitter - Part 1]()
+  - [MyEventEmitter - Part 1](https://youtu.be/LUrbOhQfqWU)
+  - [MyEventEmitter - Part 2](https://youtu.be/K60Pi1iJHHI)
+  - [MyEventEmitter - Part 3](https://youtu.be/ZuYQEpmEwtA)
 - 09 Rename Files
   - [Rename Files - Part 1](https://youtu.be/tWNAD-6mx-w)
   - [Rename Files - Part 2](https://youtu.be/uAVjoBvUkuk)
