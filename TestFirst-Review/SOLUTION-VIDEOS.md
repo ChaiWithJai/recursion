@@ -12,6 +12,12 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmkGaS
   - [Sometimes Part 2](https://youtu.be/SYvl6ljPJEQ)
   - [Sometimes Part 3](https://youtu.be/9qpn8U6HgEI)
 - [05 - Search](https://youtu.be/xUu06kVGTpE)
-  
+- 06 - My Event Emitter
+  - [MyEventEmitter - Part 1]()
+- 09 Rename Files
+  - [Rename Files - Part 1](https://youtu.be/tWNAD-6mx-w)
+  - [Rename Files - Part 2](https://youtu.be/uAVjoBvUkuk)
+  - [Rename Files - Part 3](https://youtu.be/gzkDMcmS8ZQ)
+  - [Rename Files - Part 4](https://youtu.be/BmAC4cBGTSo)
   
 **Note: There won't be a solution video for every problem, if you would like an in depth review of a problem post a question on the Forum or attend the Help Desk when it is open**
