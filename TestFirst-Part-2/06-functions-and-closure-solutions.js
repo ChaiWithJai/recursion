@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 // const concatString = function(){
 // 	let finalString = "";
 // 	for(let i = 0; i < arguments.length; i++){
@@ -6,11 +8,11 @@
 // 	return finalString;
 // };
 
-const concatString = function() {
+const concatString = function () {
   return Array.from(arguments).join('');
 };
 
-const yourFunctionRunner = function() {
+const yourFunctionRunner = function () {
   let finalString = '';
   for (let i = 0; i < arguments.length; i++) {
     finalString += arguments[i]();
@@ -29,35 +31,35 @@ const yourFunctionRunner = function() {
 // };
 
 const makeAdder = numberToRemember => {
-  return function(numberToAdd) {
+  return function (numberToAdd) {
     return numberToAdd + numberToRemember;
   };
 };
 
 const once = (func) => {
-  let notCalled = true;  
+  let notCalled = true;
   return () => {
-    if(notCalled) {
+    if (notCalled) {
       notCalled = false;
       return func();
     }
-    return 'the function has already been called...'    
+    return 'the function has already been called...'
   }
 }
 
-const createObjectWithClosures = function() {
+const createObjectWithClosures = function () {
   let total = 0;
   return {
-    oneIncrementer: function() {
+    oneIncrementer: function () {
       total += 1;
     },
-    tensIncrementer: function() {
+    tensIncrementer: function () {
       total += 10;
     },
-    getValue: function() {
+    getValue: function () {
       return total;
     },
-    setValue: function(val) {
+    setValue: function (val) {
       total = val;
     },
   };
@@ -66,7 +68,7 @@ const createObjectWithClosures = function() {
 
 function dontSpillTheBeans(secret) {
   return {
-    getSecret: function() { return secret; },
-    setSecret: function(v) { secret = v; }
+    getSecret: function () { return secret; },
+    setSecret: function (v) { secret = v; }
   };
 }

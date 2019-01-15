@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const forEach = (array, iteratorFunc) => {
   for (let i = 0; i < array.length; i++) {
     iteratorFunc(array[i]);
@@ -58,9 +60,9 @@ const every = (array, checkerFunc) => {
   return reduce(array, true, everyIterator);
 };
 
-const any = (array, checkerFunc) => {
-  const anyIterator = (currentVal, nextVal) =>
+const some = (array, checkerFunc) => {
+  const someIterator = (currentVal, nextVal) =>
     currentVal || checkerFunc(nextVal);
 
-  return reduce(array, false, anyIterator);
+  return reduce(array, false, someIterator);
 };

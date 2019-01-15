@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 class Mammal {
   constructor(name) {
     this.name = name;

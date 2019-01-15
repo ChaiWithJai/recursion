@@ -3,7 +3,13 @@
 
 Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmleMl8p873gBCn2-vp5Kgkg)
 
-- 06 Functional
+- 06 Functions and Closure
+  - [Concat String](https://youtu.be/TeZu83W11WE)
+  - [Your Function Runner](https://youtu.be/KDmbN7Jqk0o)
+  - [Make Adder](https://youtu.be/A-D9j3OP_to)
+  - [Once](https://youtu.be/iC5xRBoF2Sw)
+  - [Create Object With Closures](https://youtu.be/iVYadNJ8jA8)
+- 07 Functional
   - 00 Recreate Array Methods
     - [For Each](https://youtu.be/yODsXq1d22k)
     - [Map](https://youtu.be/44B5DGlGUjs)
@@ -29,17 +35,6 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmleMl
       - [Part 1](https://youtu.be/aeCMegjUC0g)
       - [Part 2](https://youtu.be/F5555-wVdAU)
     - [Priority Todo Duration](https://youtu.be/nb-SMUEyWKM)
-    
-    
-- 07 Recursion
-  - [Factorial](https://youtu.be/sVKlW5voHZw)
-  - [Rec Smallest Int](https://youtu.be/XcNnqd_7cVA)
-  - [Count The Vowels](https://youtu.be/4_CUbwOkn3E)
-  - [Sum The Digits](https://youtu.be/d3bmlyQhBxQ)
-  - [Type Solution](https://youtu.be/kCAK_-vTaaI)
-  - [Stringify - String Specs](https://youtu.be/iRLdMB_yQAY)
-  - [Stringify - Array Specs](https://youtu.be/eBr8kUAO1qQ)
-  - [Stringify - Object Specs](https://youtu.be/wL-lsEM9tMc)
 - 08 Classes
   - [Mammal Class](https://youtu.be/5qCplIRVmSc)
   
