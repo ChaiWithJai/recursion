@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars, no-throw-literal*/
+
 function RPNCalculator() {
   this.numStack = [];
 }
