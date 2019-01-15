@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 function difference(array, arrayTwo) {
   return array.filter(index => {
     if (!arrayTwo.includes(index)) {

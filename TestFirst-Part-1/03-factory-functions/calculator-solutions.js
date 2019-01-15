@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const createCalculator = () => {
   return {
     total: 0,
@@ -18,7 +20,7 @@ const createCalculator = () => {
 
 const addSquareMethod = arr => {
   return arr.map(val => {
-    val.square = function() {
+    val.square = function () {
       return this.total * this.total;
     };
     return val;

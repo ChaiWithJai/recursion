@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
+
 const renameFiles = arrayOfFilenames => {
   const nameTracker = {};
-  return arrayOfFilenames.map(name => {    
+  return arrayOfFilenames.map(name => {
     if (nameTracker[name] === undefined) {
       nameTracker[name] = 0;
       return name;

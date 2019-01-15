@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
+
 const hi = 'hi';
 const bye = 'bye';
 const world = 'world';
 
-function helloWorld(){
+function helloWorld() {
   return `${hi} ${world}`
 }
 

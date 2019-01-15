@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const paris = 'paris';
 const france = 'france';
 const marsielle = france;

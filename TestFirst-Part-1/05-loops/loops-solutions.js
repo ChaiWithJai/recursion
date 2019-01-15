@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 /* REPEAT SOLUTION */
 
 const repeat = (str, multi) => {
@@ -89,7 +91,7 @@ const paramifyObjectKeys = obj => {
 
 // SORT 
 function sort(items) {
- let length = items.length;
+  let length = items.length;
   for (let i = length - 1; i >= 0; i--) {
     //Number of passes
     for (let j = length - i; j > 0; j--) {

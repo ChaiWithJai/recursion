@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const pigify = phrase => {
   const phraseArr = phrase.split(' ');
   const vowel = 'aeiou';

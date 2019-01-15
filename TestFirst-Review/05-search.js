@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 function search(func) {
   let bool = false;
   this.forEach((val) => {

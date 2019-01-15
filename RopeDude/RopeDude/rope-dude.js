@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const ASCIIART = [
   `
   +---+
@@ -94,15 +96,15 @@ class RopeDude {
     if (this.gameState === 'playing') {
       return `There is a total of ${
         this.remainingGuesses
-      } guesses remaining:\n${
+        } guesses remaining:\n${
         this.remainingGuesses === 6
           ? ASCIIART[ASCIIART.length - 1]
           : ASCIIART[this.remainingGuesses]
-      }`;
+        }`;
     } else if (this.gameState === 'lost') {
       return `Game Over, the word was "${this.secretWord.join('')}":\n${
         ASCIIART[0]
-      }`;
+        }`;
     } else {
       return `Winner Winner Chicken Dinner, you won!`;
     }
@@ -130,11 +132,11 @@ const game = new RopeDude('hello');
 
 
 const simulateRopeDude = (secretWord) => {
-  const characters =["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  const characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   const game = new RopeDude(secretWord);
-  
+
   function playRopeDude() {
-    if(game.gameState !== 'playing'){
+    if (game.gameState !== 'playing') {
       return game.getGameStateMessage();
     } else {
       const randomIndex = Math.floor(Math.random() * 26);

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const setPropsOnObj = obj => {
   obj.x = 7;
   obj['y'] = 8;

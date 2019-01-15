@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
+
 const sometimes = (fn) => {
   let i = 0;
-  return function() {
+  return function () {
     if (++i >= 4 && i % 2 === 0) {
       return 'I do not know!';
     }

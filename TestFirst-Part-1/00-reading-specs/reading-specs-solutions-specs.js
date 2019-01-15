@@ -1,3 +1,7 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
+
+
 describe('the function `hello`', () => {
   it('says hello', () => {
     expect(hello()).toEqual('Hello!');

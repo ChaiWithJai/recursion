@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const name = 'Cody';
 const loud = 'loud';
 
@@ -6,7 +8,7 @@ const dog = {
     return 'ruff ruff!';
   },
   name,
-  [`${loud}Bark`]: function() {
+  [`${loud}Bark`]: function () {
     return this.bark().toUpperCase();
   },
 };
