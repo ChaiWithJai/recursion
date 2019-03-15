@@ -2,7 +2,6 @@
 
 The written solution are found in each directory in this repository. If you are looking for Video Solutions, check for a file called `SOLUTION-VIDEOS.md` in directory. There are only Solution Videos for the TestFirst series.
 
-
 ### TestFirst Part 1 - Solution Videos
 
 Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmltLh8DQZJdLvAwCzMB5Bmm)
@@ -26,11 +25,12 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmltLh
   - [RPN Calculator `toThrow` Solution](https://youtu.be/n11q0FtoVQY)
   - [RPN Calculator Refactored Solution](https://youtu.be/I4ZNIK5jnLI)
 - 05 Loops
+
   - [Repeat Solution](https://youtu.be/3cKgh_LMUD0)
   - [Sum Solution](https://youtu.be/caCkq2aldV8)
   - [Paramify](https://youtu.be/9J0lulqeJ8c)
   - [Paramify - Object.keys](https://youtu.be/6VxFogfY0VY)
-  
+
 **Note: There won't be a solution video for every problem, if you would like an in depth review of a problem post a question on the Forum or attend the Help Desk when it is open**
 
 <hr>
@@ -46,6 +46,7 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmleMl
   - [Once](https://youtu.be/iC5xRBoF2Sw)
   - [Create Object With Closures](https://youtu.be/iVYadNJ8jA8)
 - 07 Functional
+
   - 00 Recreate Array Methods
     - [For Each](https://youtu.be/yODsXq1d22k)
     - [Map](https://youtu.be/44B5DGlGUjs)
@@ -70,17 +71,17 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmleMl
     - Separate and Return Names
       - [Part 1](https://youtu.be/aeCMegjUC0g)
       - [Part 2](https://youtu.be/F5555-wVdAU)
-    - [Priority Todo Duration](https://youtu.be/nb-SMUEyWKM)    
+    - [Priority Todo Duration](https://youtu.be/nb-SMUEyWKM)
   - 08 Classes
     - [Mammal Class](https://youtu.be/5qCplIRVmSc)
-  
-  
+
 **Note: There won't be a solution video for every problem, if you would like an in depth review of a problem post a question on the Forum or attend the Help Desk when it is open**
 
 <hr>
 
 ## Test First Review - Solution Videos
 
+**Make sure to read the name of each solution file, solutions will not be in the same order as they are the TestFirst-Review Repository.**
 
 Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmkGaSX3VsMHIuWduxk8fMGD)
 
@@ -98,11 +99,12 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmkGaS
   - [MyEventEmitter - Part 2](https://youtu.be/K60Pi1iJHHI)
   - [MyEventEmitter - Part 3](https://youtu.be/ZuYQEpmEwtA)
 - 09 Rename Files
+
   - [Rename Files - Part 1](https://youtu.be/tWNAD-6mx-w)
   - [Rename Files - Part 2](https://youtu.be/uAVjoBvUkuk)
   - [Rename Files - Part 3](https://youtu.be/gzkDMcmS8ZQ)
   - [Rename Files - Part 4](https://youtu.be/BmAC4cBGTSo)
-  
+
 **Note: There won't be a solution video for every problem, if you would like an in depth review of a problem post a question on the Forum or attend the Help Desk when it is open**
 
 ## TestFirst - Recursion - Solution Videos
