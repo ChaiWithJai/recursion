@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 function mapQuest(route) {
-  var opposite = {
+  let opposite = {
     N: 'S',
     E: 'W',
     S: 'N',
