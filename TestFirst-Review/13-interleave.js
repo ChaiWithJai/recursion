@@ -48,8 +48,8 @@ const interleave = (...strs) => {
 Solution 2 - 
 
 - Uses Array.from (and the arguments object) 
-  - Note: Array.from is a great approach but an update to the documentation states "rest parameters" should e used in favor of
-  Array.from. Overall, for the purpose of this exercise and most use cases moving forward, both approaches work well!
+  - Note: Array.from is a great approach but an update to ECMAScript states "rest parameters" should be used in favor of
+  Array.from. Overall, for the purpose of this exercise and most use cases moving forward, both approaches work well (and it is good to know both options).
    
 - Basic Loops (.forEach and .reduce are refactored and removed from the solution)
 
