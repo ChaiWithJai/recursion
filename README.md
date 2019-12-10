@@ -1,6 +1,6 @@
 ## Foundations Solutions
 
-The written solution are found in each directory in this repository. If you are looking for Video Solutions, check for a file called `SOLUTION-VIDEOS.md` in directory. There are only Solution Videos for the TestFirst series.
+The written solution are found in each directory in this repository. If you are looking for video solutions, check for a file called `SOLUTION-VIDEOS.md` for each directory. There are only solution videos for the TestFirst series.
 
 ### TestFirst Part 1 - Solution Videos
 
