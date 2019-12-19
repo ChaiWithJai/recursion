@@ -57,6 +57,7 @@ Solution 2 -
 
 const interleave = function() {
   const strs = Array.from(arguments);
+  // const strs = [...arguments]; this is another great approach
 
   let longestStringLength = 0;
   // find the longest string length
