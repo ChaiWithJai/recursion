@@ -17,11 +17,7 @@ Solution [Video Playlist](https://www.youtube.com/playlist?list=PLx0iOsdUOUmltLh
   - [Create Calculator](https://youtu.be/hyhTqQ7nEDQ)
   - [Add Square Method](https://youtu.be/SpUw_1xgmGQ)
   - [Human Calculator](https://youtu.be/KgLPZfmuIck)
-- 04 Constructor Function (RPN Calculator)
-  - [RPN Calculator Basic Solution](https://youtu.be/hXfjpemStOM)
-  - [RPN Calculator `toThrow` Solution](https://youtu.be/n11q0FtoVQY)
-  - [RPN Calculator Refactored Solution](https://youtu.be/I4ZNIK5jnLI)
-- 05 Loops
+- 04 Loops
   - [Repeat Solution](https://youtu.be/3cKgh_LMUD0)
   - [Sum Solution](https://youtu.be/caCkq2aldV8)
   - [Paramify](https://youtu.be/9J0lulqeJ8c)
