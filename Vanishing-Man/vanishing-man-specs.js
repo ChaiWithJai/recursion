@@ -1,10 +1,12 @@
-describe('RopeDude Class', () => {
-  it('it attaches a constructor method to the RopeDude Class', () => {
-    expect(typeof RopeDude.constructor).toBe('function');
+/* eslint-disable no-useless-escape, no-unused-vars, no-prototype-builtins, no-undef */
+
+describe('VanishingMan Class', () => {
+  it('it attaches a constructor method to the VanishingMan Class', () => {
+    expect(typeof VanishingMan.constructor).toBe('function');
   });
 
   it('the instance has `secretWord`, `remainingGuesses`, `lettersGuessed`, and `gameState` properties', () => {
-    const game = new RopeDude('widdershins');
+    const game = new VanishingMan('widdershins');
 
     expect(game.secretWord).toEqual([
       'w',
@@ -26,12 +28,12 @@ describe('RopeDude Class', () => {
 
   describe('submitGuess method', () => {
     it('is a prototype method', () => {
-      const game = new RopeDude('xertz');
+      const game = new VanishingMan('xertz');
       expect(game.hasOwnProperty('submitGuess')).toBe(false);
     });
 
     it('if the character is a unique guess (first time the guess was attempted with a character), it is stored', () => {
-      const game = new RopeDude('xertz');
+      const game = new VanishingMan('xertz');
       game.submitGuess('a');
       game.submitGuess('a');
       game.submitGuess('z');
@@ -42,7 +44,7 @@ describe('RopeDude Class', () => {
     });
 
     it('decrements the remaining guesses when a guess is incorrect and unique', () => {
-      const game = new RopeDude('fidgety');
+      const game = new VanishingMan('fidgety');
 
       game.submitGuess('f'); // correct guesses do not decrease the amount of guesses remaining
       game.submitGuess('Z');
@@ -56,7 +58,7 @@ describe('RopeDude Class', () => {
     });
 
     it("if the gameStatus property not set to 'playing', all mechanics of the submitGuess method won't execute", () => {
-      const game = new RopeDude('tangerine');
+      const game = new VanishingMan('tangerine');
 
       game.submitGuess('t');
       game.submitGuess('E');
@@ -76,12 +78,12 @@ describe('RopeDude Class', () => {
 
   describe('computeGameState', () => {
     it('is a prototype method', () => {
-      const game = new RopeDude('cowboy');
+      const game = new VanishingMan('cowboy');
       expect(game.hasOwnProperty('computeGameState')).toBe(false);
     });
 
     it('updates the gameState property to "lost" when the remainingGuesses reaches 0', () => {
-      const game = new RopeDude('fly');
+      const game = new VanishingMan('fly');
 
       game.submitGuess('z');
       game.submitGuess('x');
@@ -96,7 +98,7 @@ describe('RopeDude Class', () => {
     });
 
     it('updates the gameState property to "won" when every word is guessed and there are remaining guesses', () => {
-      const game = new RopeDude('tree');
+      const game = new VanishingMan('tree');
 
       game.submitGuess('T');
       game.submitGuess('x');
@@ -111,13 +113,13 @@ describe('RopeDude Class', () => {
 
   describe('getSecretWordPuzzle method', () => {
     it('is a prototype method', () => {
-      const game = new RopeDude('xertz');
+      const game = new VanishingMan('xertz');
       expect(game.hasOwnProperty('getSecretWordPuzzle')).toBe(false);
     });
 
     it('represents the secret word puzzle with "#"', () => {
       const elephant = 'elephant';
-      const game = new RopeDude(elephant);
+      const game = new VanishingMan(elephant);
       const secretWordPuzzle = game.getSecretWordPuzzle();
 
       expect(secretWordPuzzle).toBe('########');
@@ -125,7 +127,7 @@ describe('RopeDude Class', () => {
     });
 
     it('reveals the correct guesses in the puzzle', () => {
-      const game = new RopeDude('typewriter');
+      const game = new VanishingMan('typewriter');
 
       game.submitGuess('w');
       game.submitGuess('T');
@@ -147,13 +149,13 @@ describe('RopeDude Class', () => {
     });
 
     it('handles a space', () => {
-      const game = new RopeDude('nacho fries');
+      const game = new VanishingMan('nacho fries');
 
       expect(game.getSecretWordPuzzle()).toBe('##### #####');
     });
 
     it('handles multiple spaces', () => {
-      const game = new RopeDude('take me out to the ball game');
+      const game = new VanishingMan('take me out to the ball game');
 
       expect(game.getSecretWordPuzzle()).toBe('#### ## ### ## ### #### ####');
     });
@@ -161,30 +163,29 @@ describe('RopeDude Class', () => {
 
   describe('getGameStateMessage method', () => {
     it('is a prototype method', () => {
-      const game = new RopeDude('xertz');
+      const game = new VanishingMan('xertz');
       expect(game.hasOwnProperty('getGameStateMessage')).toBe(false);
     });
 
     it('returns a structured string with blank board ASCII-ART when the game state is set to "playing"', () => {
-      const game = new RopeDude('helmet');
+      const game = new VanishingMan('helmet');
       const gameState = game.gameState;
 
-      const message = game.getGameStateMessage();
+      game.getGameStateMessage();
       expect(gameState === 'playing').toBe(true);
       expect(game.getGameStateMessage())
         .toBe(`There is a total of 6 guesses remaining:
 
-  +---+
-  |   |
-      |
-      |
-      |
-      |
+
+
+
+
+
 =========`);
     });
 
     it('returns a structured string with a filled board ASCII-ART when the game state is set to "lost"', () => {
-      const game = new RopeDude('rubber duck');
+      const game = new VanishingMan('rubber duck');
       const gameState = game.gameState;
       game.submitGuess('a');
       game.computeGameState();
@@ -207,37 +208,34 @@ describe('RopeDude Class', () => {
       expect(threeIncorrectMessage)
         .toBe(`There is a total of 3 guesses remaining:
 
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
+
+  O      
+ /|      
+
+
 =========`);
       expect(fiveIncorrectMessage)
         .toBe(`There is a total of 1 guesses remaining:
 
-  +---+
-  |   |
-  O   |
- /|\\\  |
- /    |
-      |
-      
+
+  O      
+ /|\\\   
+ /       
+
+
 =========`);
       expect(game.gameState === 'lost').toBe(true);
       expect(sixIncorrectMessage).toBe(`Game Over, the word was "rubber duck":
 
-  +---+
-  |   |
-  O   |
- /|\\\  |
- / \\\  |
-      |
+
+  O   
+ /|\\\  
+ / \\\  
+
 =========`);
     });
     it('returns a structured string when the game state is set to "won"', () => {
-      const game = new RopeDude('coffee');
+      const game = new VanishingMan('coffee');
 
       game.submitGuess('c');
       game.computeGameState();
@@ -256,14 +254,14 @@ describe('RopeDude Class', () => {
   });
 });
 
-describe('simulateRopeDude', () => {
-  /* 
-  
+describe('simulateVanishingMan', () => {
+  /*
+
   note: the specs are not defined beside the return value (and the argument)
-  review the suggestions for the simulateRopeDude function and try to apply them!
-  
+  review the suggestions for the simulateVanishingMan function and try to apply them!
+
   */
   it('returns the final result (won or lost condition)', () => {
-    expect(typeof simulateRopeDude('hello world')).toBe('string');
+    expect(typeof simulateVanishingMan('hello world')).toBe('string');
   });
 });

@@ -1,66 +1,60 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable no-unused-vars */
-
+// What is ASCIIART? Check the README.md or Workshop to see why ASCIIART is defined in your file.
 const ASCIIART = [
   `
-  +---+
-  |   |
-  O   |
- /|\\\  |
- / \\\  |
-      |
+
+  O   
+ /|\\\  
+ / \\\  
+
 =========`,
   `
-  +---+
-  |   |
-  O   |
- /|\\\  |
- /    |
-      |
-      
+
+  O      
+ /|\\\   
+ /       
+
+
 =========`,
   `
-  +---+
-  |   |
-  O   |
- /|\\\  |
-      |
-      |
+
+  O      
+ /|\\\   
+
+
 =========`,
   `
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
+
+  O      
+ /|      
+
+
 =========`,
   `
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
+
+  O      
+  |      
+
+
 =========`,
   `
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
+
+  O      
+
+
+
 =========`,
   `
-  +---+
-  |   |
-      |
-      |
-      |
-      |
+
+
+
+
+
 =========`,
 ];
 
-class RopeDude {
+class VanishingMan {
   constructor(secretWord) {
     this.remainingGuesses = 6;
     this.lettersGuessed = [];
@@ -70,7 +64,7 @@ class RopeDude {
 
   computeGameState() {
     let won = this.secretWord.every(
-      letter => this.lettersGuessed.includes(letter) || letter === ' '
+      (letter) => this.lettersGuessed.includes(letter) || letter === ' '
     );
     if (this.remainingGuesses === 0) {
       this.gameState = 'lost';
@@ -82,7 +76,7 @@ class RopeDude {
   }
   getSecretWordPuzzle() {
     return this.secretWord
-      .map(letter => {
+      .map((letter) => {
         if (this.lettersGuessed.includes(letter) || letter === ' ') {
           return letter;
         } else {
@@ -96,15 +90,15 @@ class RopeDude {
     if (this.gameState === 'playing') {
       return `There is a total of ${
         this.remainingGuesses
-        } guesses remaining:\n${
+      } guesses remaining:\n${
         this.remainingGuesses === 6
           ? ASCIIART[ASCIIART.length - 1]
           : ASCIIART[this.remainingGuesses]
-        }`;
+      }`;
     } else if (this.gameState === 'lost') {
       return `Game Over, the word was "${this.secretWord.join('')}":\n${
         ASCIIART[0]
-        }`;
+      }`;
     } else {
       return `Winner Winner Chicken Dinner, you won!`;
     }
@@ -128,14 +122,40 @@ class RopeDude {
   }
 }
 
-const game = new RopeDude('hello');
+const game = new VanishingMan('hello');
 
+const simulateVanishingMan = (secretWord) => {
+  const characters = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
+  ];
+  const game = new VanishingMan(secretWord);
 
-const simulateRopeDude = (secretWord) => {
-  const characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  const game = new RopeDude(secretWord);
-
-  function playRopeDude() {
+  function playVanishingMan() {
     if (game.gameState !== 'playing') {
       return game.getGameStateMessage();
     } else {
@@ -143,13 +163,9 @@ const simulateRopeDude = (secretWord) => {
       const guess = characters[randomIndex];
       game.submitGuess(guess);
       game.computeGameState();
-      return playRopeDude();
+      return playVanishingMan();
     }
   }
 
-  return playRopeDude();
-}
-
-// for(let i = 0; i < 1000; i++) {
-//  console.log(simulateRopeDude('coffee')); 
-// }
+  return playVanishingMan();
+};
